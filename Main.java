@@ -28,19 +28,26 @@ class Main {
     }
 
     //addition method 
-    static int addition (int aValue, int bValue)
+    static int addition(int aValue, int bValue)
     {
       int sum = aValue + bValue;
       return sum;
     }
 
     //subtraction method
-    static int addition (int aValue, int bValue)
+    static int subtraction(int aValue, int bValue)
     {
-      int sum = aValue + bValue;
-      return sum;
+      int diff = aValue - bValue;
+      return diff;
     }
 
 
+    //multiplication method
+    static int multiplication(int aValue, int bValue)
+    {
+      int product = aValue * bValue;
+      return product;
+    }
+    
   }
 }

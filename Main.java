@@ -1,7 +1,5 @@
 import java.util.Scanner;
 
-import sun.jvm.hotspot.runtime.StaticBaseConstructor;
-
 class Main {
   public static void main(String[] args) {
   {

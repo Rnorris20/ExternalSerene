@@ -3,6 +3,7 @@ import java.util.Scanner;
 class Main {
   public static void main(String[] args) {
     {
+      //created scanners and the original print statements
       Scanner scan = new Scanner(System.in);
       System.out.println("What should be your A value");
       int aValue = scan.nextint();
@@ -48,6 +49,12 @@ class Main {
       int product = aValue * bValue;
       return product;
     }
-    
+
+    //division method
+    static int division(int aValue, int bValue)
+    {
+      int quotient = aValue / bValue;
+      return quotient;
+    }
   }
 }

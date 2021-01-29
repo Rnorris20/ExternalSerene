@@ -1,33 +1,35 @@
 import java.util.Scanner;
 
+import sun.jvm.hotspot.runtime.StaticBaseConstructor;
+
 class Main {
   public static void main(String[] args) {
-    {
-      //created scanners and the original print statements
-      Scanner scan = new Scanner(System.in);
-      System.out.println("What should be your A value");
-      int aValue = scan.nextint();
-      System.out.println("What should be your B value");
-      int bValue = scan.nextint();
+  {
+    //created scanners and the original print statements
+    Scanner scan = new Scanner(System.in);
+    System.out.println("What should be your A value");
+    int aValue = scan.nextint();
+    System.out.println("What should be your B value");
+    int bValue = scan.nextint();
 
-      System.out.println("This is your result for your work");
+    System.out.println("This is your result for your work");
 
-      //math part of the code
-      int sum = addition(aValue, bValue);
-      System.out.println("If you add," + aValue + "and" + bValue + "you would get" + sum);
+    //math part of the code
+    int sum = addition(aValue, bValue);
+    System.out.println("If you add," + aValue + "and" + bValue + "you would get" + sum);
 
-      int diff = subtraction (aValue, bValue);
-      System.out.println("If you subtract the values," + aValue + "and" + bValue + "you would get" + diff);
+    int diff = subtraction (aValue, bValue);
+    System.out.println("If you subtract the values," + aValue + "and" + bValue + "you would get" + diff);
 
-      int product = multiplication (aValue, bValue);
-      System.out.println("If you multiply the values," + aValue + "and" + bValue + "you would get" + product);
+    int product = multiplication (aValue, bValue);
+    System.out.println("If you multiply the values," + aValue + "and" + bValue + "you would get" + product);
 
-      int quotient = division (aValue, bValue);
-      System.out.println("If you divide the values," + aValue + "and" + bValue + "you would get" + quotient);
+    int quotient = division (aValue, bValue);
+    System.out.println("If you divide the values," + aValue + "and" + bValue + "you would get" + quotient);
 
 
-    }
-
+  }
+    
     //addition method 
     static int addition(int aValue, int bValue)
     {
@@ -42,7 +44,6 @@ class Main {
       return diff;
     }
 
-
     //multiplication method
     static int multiplication(int aValue, int bValue)
     {
@@ -55,6 +56,7 @@ class Main {
     {
       int quotient = aValue / bValue;
       return quotient;
-    }
-  }
+     }
+    
+  
 }
